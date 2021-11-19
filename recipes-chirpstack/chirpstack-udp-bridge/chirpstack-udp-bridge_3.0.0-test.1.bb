@@ -36,4 +36,4 @@ do_install() {
     install -m 0640 ${WORKDIR}/chirpstack-udp-bridge.toml ${D}${sysconfdir}/chirpstack-udp-bridge/chirpstack-udp-bridge.toml
 }
 
-CONFFILES_${PN} += "${sysconfdir}/chirpstack-udp-bridge/chirpstack-udp-bridge.toml"
+CONFFILES:${PN} += "${sysconfdir}/chirpstack-udp-bridge/chirpstack-udp-bridge.toml"
